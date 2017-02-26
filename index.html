@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>PULLsky</title>
+    <link rel="icon" href="images/logo1.png" type="images/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="bg-logo"></div>
+        <div class="container logo-board">
+            <div class="row flex-row">
+                <div class="col-xs-3 logo">
+                    <a href="#">
+                        <img src="images/logo1.png" alt="pullsky" class="img img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-9 tel-board flex-row">
+                    <div class="contact-board flex-row">
+                        <div class="phone flex-row">
+                            <i class="fa fa-phone icons" data-toggle="modal" data-target="#modal-call"></i>
+                            <span class="tel flex-column">
+                                    <select>
+                                        <option>+38 &#40;097&#41; 282 50 66</option>
+                                        <option selected>+38 &#40;067&#41; 282 50 33</option>
+                                    </select>
+                                    <a href="#" class="modal-call" data-toggle="modal" data-target="#modal-call">Заказать звонок</a>
+                                </span>
+                        </div>
+                        <div class="address flex-row">
+                            <i class="fa fa-map-marker fa-lg icons" aria-hidden="true"></i>
+                            <span>
+                                    Украина, г. Днепропетровск <br>
+                                    ул. Набережная заводская 7, оф. 601
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 lang">
+                    <ul class="list-unstyled flex-row languages">
+                        <li class="active-lang"><a href="#">ua</a>
+                        </li>
+                        <li><a href="#">ru</a>
+                        </li>
+                        <li><a href="#">pl</a>
+                        </li>
+                        <li><a href="#">en</a>
+                        </li>
+                        <li><a href="#">cz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navs-top nav-before">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed navs-btn" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav main-nav flex-row">
+                        <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Главная <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Для дилеров</a>
+                                </li>
+                                <li><a href="#">Новости и События</a>
+                                </li>
+                                <li><a href="#">О нас</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Продукция</a>
+                        </li>
+                        <li><a href="#">Для дилеров</a>
+                        </li>
+                        <li><a href="#">Сервис</a>
+                        </li>
+                        <li><a href="#">Акции</a>
+                        </li>
+                        <li><a href="#">Новисти и Событья</a>
+                        </li>
+                        <li><a href="#">Доставка</a>
+                        </li>
+                        <li><a href="#">О нас</a>
+                        </li>
+                        <li><a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="modal fade" id="modal-call" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="text-center form-title">Обратная связь</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" novalidate>
+                            <div class="form-group feedback">
+                                <input type="text" class="input-control" placeholder="Ваше имя">
+                                <span class="addon" id="addon-human"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="form-group feedback">
+                                <input type="text" class="input-control" placeholder="Ваш телефон">
+                                <span class="addon" id="addon-tel"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="form-btn text-center">
+                                <input type="submit" class="my-btn btn-blue" value="Отправить заявку">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="baner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 baner-board text-center">
+                    <h1 class="title">Натяжные потолки</h1>
+                    <p class="baner-text lead">Компания Nexll обеспечивает своих партнеров готовыми натяжными потолками по доступным ценам на протяжении 4 лет. Кроме того, мы предоставляем полную поддержку по обучению персонала, продаже, монтажу и рекламе. Хотите стать нашим дилером?</p>
+                    <div class="baner-buttons text-center">
+                        <a href="#" class="my-btn btn-blue">Подробнее <i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="my-btn btn-green">Стать Дилером</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="title section-title">Новости и События</h2>
+                <nav class="nav-news">
+                    <ul class="list-unstyled flex-row">
+                        <li><a href="#" class="active-link-news">Все</a>
+                        </li>
+                        <li><a href="#">Вебинары</a>
+                        </li>
+                        <li><a href="#">Новые Продукты</a>
+                        </li>
+                        <li><a href="#">Выставки</a>
+                        </li>
+                        <li><a href="#">Конференции</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="news-slider">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="carousel-caption text-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news2.jpg" alt="news2" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption text-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news2.jpg" alt="news2" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption text-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news2.jpg" alt="news2" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="news-details">
+                                                    <div class="news-head">
+                                                        <img src="images/news1.jpg" alt="news1" class="img img-responsive">
+                                                        <h4 class="news-title title">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </h4>
+                                                    </div>
+                                                    <div class="news-body">
+                                                        <div class="news-category">
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <h5 class="title">Вебинари</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="news-descr">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, ut suscipit similique amet! Ab delectus obcaecati illo tempora aut...
+                                                        </p>
+                                                        <div class="news-more text-center">
+                                                            <a href="#" class="my-btn">Подробнее <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-work-success">
+        <div class="container">
+            <div class="row flex-row">
+
+                <div class="success-item">
+                    <div class="success-head flex-row">
+                        <img src="images/event1.png" alt="success-1" class="img img-responsive">
+                        <span class="text-green">5+</span>
+                    </div>
+                    <div class="success-body">
+                        <span>Более 5 лет компания <br> на рынке украыни</span>
+                    </div>
+                </div>
+
+
+                <div class="success-item">
+                    <div class="success-head flex-row">
+                        <img src="images/event2.png" alt="success-1" class="img img-responsive">
+                        <span class="text-blue">30 000</span>
+                    </div>
+                    <div class="success-body">
+                        <span>Потолков установили <br> наши дилері в 2015 году</span>
+                    </div>
+                </div>
+
+                <div class="success-item">
+                    <div class="success-head flex-row">
+                        <img src="images/event3.png" alt="success-1" class="img img-responsive">
+                        <span class="text-green">14</span>
+                    </div>
+                    <div class="success-body">
+                        <span>Областей охватівают <br> наши дилері по украине</span>
+                    </div>
+                </div>
+
+                <div class="success-item">
+                    <div class="success-head flex-row">
+                        <img src="images/event4.png" alt="success-1" class="img img-responsive">
+                        <span class="text-blue">280%</span>
+                    </div>
+                    <div class="success-body">
+                        <span>Рост компании <br> в 2015 году</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="our-advanture">
+        <div class="container">
+            <div class="row">
+                <h3 class="title text-center section-title">Наше приемущества</h3>
+                <div class="bg-adv"></div>
+                <div class="wrap-adv flex-row">
+                    <div class="adv-item">
+                        <div class="adv-head adv-blue-block">
+                            <span><img src="images/adv1.png" alt="adv1" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">Полное наличие цветов палитры из нашего каталога</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-green-circle">
+                            <span><img src="images/adv2.png" alt="adv2" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">Инструменты для работы, различные каталоги, программа для построения</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-blue-block">
+                            <span><img src="images/adv3.png" alt="adv3" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">Мы разработали для наших дилеров различные виды дизайна визиток, объявлений, флаеров</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-green-circle">
+                            <span><img src="images/adv4.png" alt="adv4" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">Наш клиен самая большая сеть натяжных потолков в Украине Гарпун</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-green-circle">
+                            <span><img src="images/adv5.png" alt="adv5" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">18 цветной вставки
+                                <br>и 9 видов белой</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-blue-block">
+                            <span><img src="images/adv6.png" alt="adv6" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">У нас полноценный отдел качества продукции и все материалов которых мы предоставляем нашим клиентам</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-green-circle">
+                            <span><img src="images/adv7.png" alt="adv7" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">В случае несоответствия полотна требованиям установки, мы переделываем его без выяснения причин, чтобы Вы и Ваши клиенты быстро вышли из этой ситуации</p>
+                        </div>
+                    </div>
+                    <div class="adv-item">
+                        <div class="adv-head adv-blue-block">
+                            <span><img src="images/adv8.png" alt="adv8" class="img img-responsive"></span>
+                        </div>
+                        <div class="adv-body">
+                            <p class="text-center">Ваш заказ оформленный до 15:00 изготавливается в этот же день.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-company">
+        <h3 class="title text-center section-title">О компании</h3>
+        <div class="bg-adv"></div>
+        <div class="company-slider">
+            <div class="container">
+                <div class="row sliders">
+                    <div class="col-sm-6">
+                        <div id="carousel-company" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-company" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-company" data-slide-to="1"></li>
+                                <li data-target="#carousel-company" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="carousel-caption">
+                                        <!--                                        <div class="com-item-slider" style="background:url(../images/slider1.png) cover center center;"></div>-->
+                                        <img src="images/slider1.png" alt="slider-company" class="img img-responsive">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-caption">
+                                        <!--                                        <div class="com-item-slider" style="background:url(../images/slider1.png) cover center center;"></div>-->
+                                        <img src="images/slider1.png" alt="slider-company" class="img img-responsive">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-caption">
+                                        <!--                                        <div class="com-item-slider" style="background:url(../images/slider1.png) cover center center;"></div>-->
+                                        <img src="images/slider1.png" alt="slider-company" class="img img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 company-aside-slider">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <p>Suspendisse potenti. Etiam in mi nec massa dapibus sagittis. Suspendisse potenti. Nulla efficitur erat diam, vel facilisis ante tristique et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In metus purus, accumsan quis diam dignissim, venenatis pretium metus. Nulla vestibulum eleifend massa, quis interdum lorem congue eget. Aliquam aliquet ullamcorper consectetur. Mauris gravida arcu quis ex porttitor, ac vehicula diam congue. Cras congue blandit dui id sagittis. Donec a ex vulputate, maximus ipsum dapibus, fermentum mi.</p>
+                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Vestibulum vitae rutrum lacus.</p>
+                                <div class="company-more">
+                                    <a href="#" class="my-btn">Подробнее <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div id="carousel-aside" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-aside" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-aside" data-slide-to="1"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="carousel-caption">
+                                                <img src="images/acredit.png" alt="acredit" class="img img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="carousel-caption">
+                                                <img src="images/acredit.png" alt="acredit" class="img img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="feedbacks">
+        <h3 class="title text-center section-title">Отзывы</h3>
+        <div class="bg-adv"></div>
+        <div class="container">
+            <div class="row">
+                <div id="carousel-client" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-client" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-client" data-slide-to="1"></li>
+                        <li data-target="#carousel-client" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client1.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client2.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client1.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client2.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client1.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="person text-left">
+                                            <div class="person-head">
+                                                <img src="images/quote.png" alt="persone" class="img img-responsive">
+                                                <img src="images/client2.png" alt="persone" class="img img-responsive client">
+                                            </div>
+                                            <div class="person-body">
+                                                <p>Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at iaculis nunc. Cras porttitor porta augue sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames anunc.</p>
+                                            </div>
+                                            <div class="person-foot">
+                                                <h4 class="title person-name">Виктор Васюк</h4>
+                                                <div class="person-history">
+                                                    <p>г. Днепропетровкс, работает с Pullsky 4 года.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div id="map"></div>
+        <div class="map-details">
+            <h3 class="title text-center section-title">Наши дилеры находиться в 14 областях Украины </h3>
+            <div class="more-city text-center">
+                <a href="#" class="my-btn btn-blue">Выбрать город</a>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <nav class="foot-navs flex-row">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Главная</a>
+                            </li>
+                            <li><a href="#">Продукция</a>
+                            </li>
+                            <li><a href="#">Для дилеров</a>
+                            </li>
+                            <li><a href="#">Сервис</a>
+                            </li>
+                            <li><a href="#">Акции</a>
+                            </li>
+                            <li><a href="#">Новости и события</a>
+                            </li>
+                            <li><a href="#">Доставка</a>
+                            </li>
+                            <li><a href="#">О нас</a>
+                            </li>
+                            <li><a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Главная</a>
+                            </li>
+                            <li><a href="#">Продукция</a>
+                            </li>
+                            <li><a href="#">Для дилеров</a>
+                            </li>
+                            <li><a href="#">Сервис</a>
+                            </li>
+                            <li><a href="#">Акции</a>
+                            </li>
+                            <li><a href="#">Новости и события</a>
+                            </li>
+                            <li><a href="#">Доставка</a>
+                            </li>
+                            <li><a href="#">О нас</a>
+                            </li>
+                            <li><a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 block-top">
+                    <form action="" novalidate>
+                        <h5 class="text-center form-title">Хотите стать нашим партнером?<br>Заполните простую анкету</h5>
+                        <div class="form-group feedback">
+                            <input type="text" class="input-control" placeholder="Ваше имя">
+                            <span class="addon" id="addon-human"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="form-group feedback">
+                            <input type="text" class="input-control" placeholder="Ваш телефон">
+                            <span class="addon" id="addon-tel"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="form-link text-center">
+                            <a href="#">Дополнительная информация</a>
+                        </div>
+                        <div class="form-btn text-center">
+                            <input type="submit" class="my-btn btn-blue" value="Отправить заявку">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-block">
+                        <div class="phones text-center flex-column">
+                            <i class="fa fa-phone icons" aria-hidden="true"></i>
+                            <span>+38 &#40;067&#41; 245 12 25</span>
+                            <span>+38 &#40;067&#41; 245 12 25</span>
+                            <span>+38 &#40;067&#41; 245 12 25</span>
+                        </div>
+                        <div class="addr text-center flex-column">
+                            <i class="fa fa-map-marker icons" aria-hidden="true"></i>
+                            <span>Украина, г. Львов <br> ул. Городоцька 8, оф. 31</span>
+                        </div>
+                        <div class="mail text-center flex-column">
+                            <i class="fa fa-envelope icons" aria-hidden="true"></i>
+                            <span>office@nexll.com.ua</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="social-icons flex-row">
+                    <i class="fa fa-facebook icons" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin icons" aria-hidden="true"></i>
+                    <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus icons" aria-hidden="true"></i>
+                    <i class="fa fa-youtube icons" aria-hidden="true"></i>
+                </div>
+                <div class="copyright">
+                    <p class="text-center">&copy; 2017. Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!--    <script src="js/map.js"></script>-->
+    <!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4dFqxWWpHWQdjG1yJa2Y8tgiF6gXbTp4&callback=myMap"></script>-->
+</body>
+
+</html>
