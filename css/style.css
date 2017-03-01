@@ -37,6 +37,14 @@ span {
     color: #fff;
     border-radius: 50%;
 }
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+    background-color: transparent;
+}
+.active-link{
+    border-bottom: 5px solid #77B700;
+}
 .icons {
     height: 30px;
     width: 30px;
@@ -56,10 +64,6 @@ span {
     margin-left: -16px;
     display: block;
     margin-bottom: 50px;
-}
-/*============modal===========*/
-.modal-sm{
-    max-width: 500px;
 }
 
 /*===================Header===================*/
@@ -184,6 +188,8 @@ span {
 }
 .lang .languages li {
     margin-right: 7px;
+    -webkit-transition: .3s;
+    transition: .3s
 }
 .lang .languages li:hover{
     border: 2px solid #00A4EB;
@@ -210,10 +216,12 @@ span {
 .main-header .navbar {
     min-height: 0;
 }
+.main-header .container>.navbar-collapse{
+/*    margin: 0;*/
+}
 .navs-btn {
     background-color: #00A4EB;
     margin-top: -42px;
-    right: 15px;
 }
 .navs-btn:hover {
     background-color: #00A4EB;
@@ -239,7 +247,7 @@ span {
     padding: 0;
 }
 .navs-top>.container{
-    padding: 0;
+/*    padding: 0;*/
 }
 .navbar-default .navbar-collapse{
     border: none;
@@ -250,6 +258,7 @@ span {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
 }
 .main-nav {
     background-color: transparent;
@@ -272,7 +281,10 @@ span {
     transition: .2s;
 }
 .main-nav>li>a:hover {
-    border-bottom: 3px solid #77B700;
+    border-bottom: 5px solid #77B700;
+}
+.main-nav>li.active-link a:hover{
+    border-bottom: none;
 }
 .main-header .navbar-header {
     height: 0;
@@ -950,17 +962,12 @@ span {
     .dropdown-menu{
         padding: 5px 20px;
     }
-    .main-header .navbar-collapse.in {
-        overflow-y: inherit;
-        margin: 0 -15px;
-    }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a,
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
         color: #fff;
     }
     .main-nav {
         background-color: #3E3E3E;
-        margin-top: 0;
     }
     .main-nav>li {
         display: block;

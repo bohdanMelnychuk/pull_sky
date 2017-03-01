@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -85,7 +85,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav main-nav flex-row">
-                        <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Главная <span class="caret"></span></a>
+                        <li class="active-link"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Главная <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Для дилеров</a>
                                 </li>
@@ -117,7 +117,7 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="modal fade" id="modal-call" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal fade" id="modal-call" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -126,14 +126,14 @@
                         <h5 class="text-center form-title">Обратная связь</h5>
                     </div>
                     <div class="modal-body">
-                        <form action="" novalidate>
+                        <form action="test.php" novalidate id="form_call">
                             <div class="form-group feedback">
-                                <input type="text" class="input-control" placeholder="Ваше имя">
-                                <span class="addon" id="addon-human"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                <input type="text" name="name" class="input-control" placeholder="Ваше имя">
+                                <span class="addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                             </div>
                             <div class="form-group feedback">
-                                <input type="text" class="input-control" placeholder="Ваш телефон">
-                                <span class="addon" id="addon-tel"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <input type="text" name="phone" class="input-control" placeholder="+38 (068) 239 12 35" maxlength="19">
+                                <span class="addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
                             </div>
                             <div class="form-btn text-center">
                                 <input type="submit" class="my-btn btn-blue" value="Отправить заявку">
@@ -639,6 +639,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <section class="feedbacks">
         <h3 class="title text-center section-title">Отзывы</h3>
@@ -836,15 +837,15 @@
                     </nav>
                 </div>
                 <div class="col-md-4 block-top">
-                    <form action="" novalidate>
+                    <form action="test.php" novalidate id="form_partner">
                         <h5 class="text-center form-title">Хотите стать нашим партнером?<br>Заполните простую анкету</h5>
                         <div class="form-group feedback">
                             <input type="text" class="input-control" placeholder="Ваше имя">
-                            <span class="addon" id="addon-human"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                         </div>
                         <div class="form-group feedback">
                             <input type="text" class="input-control" placeholder="Ваш телефон">
-                            <span class="addon" id="addon-tel"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
                         </div>
                         <div class="form-link text-center">
                             <a href="#">Дополнительная информация</a>
