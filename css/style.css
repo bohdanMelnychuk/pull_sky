@@ -65,7 +65,30 @@ span {
     display: block;
     margin-bottom: 50px;
 }
-
+/*========validation==============*/
+.message::before{
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    border-bottom: 10px solid  #f83636;
+    border-right: 3px solid transparent;
+    border-left: 7px solid transparent;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    
+}
+.message{
+    background-color: #f83636;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 7px 10px;
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+}
 /*===================Header===================*/
 
 /*=========bg-logo section===================*/
@@ -825,7 +848,7 @@ span {
     color: #787878;
     text-decoration: underline;
 }
-.form-btn input[type=submit]{
+.form-btn button[type=submit]{
     background-color: transparent;
     color: #009be1;
     font-weight: 700;
@@ -838,7 +861,7 @@ span {
     transition: .3s;
     margin-bottom: 20px;
 }
-.form-btn input[type=submit]:hover{
+.form-btn button[type=submit]:hover{
     color: #fff;
     background-color: #009be1;
 }

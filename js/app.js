@@ -1,5 +1,21 @@
 
-
+//Validation input fields
+    angular.module('appSky',[])
+        .controller('skyCtrl',['$scope',function($scope){
+           $scope.validatePartner = function(error){
+               var message;
+                if(angular.isDefined(error)){
+                    if(error.required){
+                        message = 'Поле обезательное для заполнения';
+                    }else if(error.email){
+                        message = 'Введите коректной email адрес';
+                    }
+                }
+                return message;
+           } 
+        }])
+    
+    
 $(function(){
     $('.modal-cell').modal();
     $('#carousel').carousel({
@@ -31,11 +47,5 @@ $(function(){
         $('.news .nav-news li a.active-link-news').removeClass("active-link-news");
         $(this).addClass("active-link-news");
     })
-    
-    $('input[name=phone]').click(function(){
-        $(this).val("+38")
-    })
-    
-    //validation input fields
-    
+
 })
